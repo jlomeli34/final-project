@@ -1,0 +1,136 @@
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css?family=Courgette|Mogra');
+
+/*Global Styles*/
+
+.text{
+  color: #000;
+  font-family: 'Courgette', cursive;
+}
+
+/*Header*/
+#logo{
+  height:40px;
+  width: 40px;
+  padding-bottom: 12px;
+}
+.navbar{
+  background-color: #000;
+  border: none;
+  font-family: 'Courgette', cursive;
+  color: #000;
+}
+/*Jumbotron*/
+.jumbotron {
+  background-image: url('../images/lights-top2.jpg');
+  background-size: cover;
+  opacity: .85;
+  margin: 0;
+}
+.jumbotron h1{
+  color: #fff;
+  font-family: 'Mogra', cursive;
+  font-size: 100px;
+  margin-top:250px;
+  animation: name 5s;
+}
+@keyframes name {
+  0% {
+    transform: rotate(0);
+  }
+  50%{
+    transform:rotate(10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.jumbotron p{
+  font-size: 75px;
+  animation: web 5s;
+}
+@keyframes web{
+  0%{
+    transform: translate(0,0)
+  }
+  100%{
+    transform: translate(10px);
+  }
+}
+
+/*Work*/
+#work{
+  background-color: #000;
+  height: 600px;
+}
+.work-text{
+  font-family: 'Mogra', cursive;
+  color: #fff;
+  padding: 40px;
+  text-align: center:
+}
+h3{
+  font-family: 'Courgette', cursive;
+  text-align: center;
+  font-size: 30px;
+}
+.thumbnail{
+  background-color: #fff;
+  padding: 6px;
+}
+
+.thumbnail>img{
+  padding: 10px;
+  height: 220px;
+  width: 259.77px;
+}
+.btn-info {
+    color: #fff;
+    background-color: #000;
+    border-color: #000;
+}
+.btn{
+  display: inherit;
+  font-family: 'Courgette', cursive;
+  font-size: 14px;
+}
+/*Contact*/
+#contact{
+  padding-top: 60px;
+  background-color: #000;
+  min-height: 600px;
+}
+.contact-text{
+  font-family: 'Mogra', cursive;
+  font-size: 30px;
+}
+label{
+  color: #fff;
+  font-family: 'Courgette', cursive;
+}
+.social-media{
+  animation: social 4s infinite;
+  transform: skew(20deg);
+  animation-direction: alternate;
+  opacity: .7;
+  margin-top: 80px;
+
+}
+@keyframes social {
+  0% {
+    transform: skewX(20deg);
+  }
+  100% {
+    transform: skewX(-20deg);
+  }
+}
+.fa-facebook-square{
+    color:#3b5998;
+}
+.fa-pinterest{
+    color: #cb2027;
+}
+
+.fa-instagram{
+    color: #9b6964;
+}

@@ -1,12 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+  	<link rel="stylesheet" href="css/font-awesome.min.css">
+  	<link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body data-spy="scroll">
+    <header class="container fluid">
+  		<nav class="navbar navbar-default navbar-fixed-top">
+  			<div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+    			<div class="navbar-header">
+    				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+    					<span class="sr-only">Toggle navigation</span>
+    					<span class="icon-bar"></span>
+    					<span class="icon-bar"></span>
+    					<span class="icon-bar"></span>
+    				</button>
+    			  <a class="navbar-brand" href="home">
+            <img src="images/logo2.png" alt="logo" class="img-relative" id="logo"></a>
+    			</div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+    			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    				<ul class="nav navbar-nav navbar-right text-shadow">
+    					<li class="active"><a href="#home">Home</a></li>
+    					<li><a href="#work">Work</a></li>
+    					<li><a href="#contact">Contact</a></li>
+    				</ul>
+    			</div><!-- /.navbar-collapse -->
+  			</div><!-- /.container-fluid -->
+  		</nav>
+  	</header>
+    <!--Jumbotron begins here-->
+    <div class="jumbotron screen" id="home">
+      <div class="container">
+            <h1 class="display-3">Janette Lomeli</h1>
+            <p class="lead text">Web developer</p>
+      </div>
+    </div>
+    <!--Work Section Begins-->
+    <div class="container-fluid" id="work">
+      <div class="row">
+  			<div class="col-sm-8 col-sm-offset-2">
+  				<div class="row">
+  					<div class="col-sm-12">
+  						<h1 class="text-uppercase text-center work-text">Work Created</h1>
+  					</div>
+  				</div>
+  				<div class="row"> <!--Thumbnails start here -->
+  					<div class="col-sm-4 col-xs-6"> <!--Thumbnail 1 -->
+  				    <div class="thumbnail">
+  				      <img src="images/pet-store2.JPG" alt="pet store page">
+  				      <div class="caption">
+  				        <h3>Pet Store</h3>
+                  <p><a href="https://geekwiseb2.github.io/petstore-2-jlomeli34/" class="btn btn-info btn-sm" role="button">View</a></p>
+  				      </div>
+  				    </div>
+  					</div> <!--Thumbnail 1 ends -->
+  					<div class="col-sm-4 col-xs-6"> <!--Thumbnail 2 -->
+  						<div class="thumbnail">
+  				      <img src="images/restaurant2.JPG" alt="restaurant page" class="img">
+  				      <div class="caption">
+  				        <h3>Restaurant</h3>
+                  <p><a href="https://geekwiseb2.github.io/restaurante-june-17-jlomeli34" class="btn btn-info btn-sm" role="button">View</a></p>
+  				      </div>
+  				    </div>
+  					</div> <!--Thumbnail 2 Ends -->
+  					<div class="col-sm-4 col-xs-6"> <!--Thumbnail 3 -->
+  						<div class="thumbnail">
+  				      <img src="images/love-of-knitting.JPG" alt="knitting page" class="img">
+  				      <div class="caption">
+  				        <h3>Knitting</h3>
+                  <p><a href="https://preview.c9users.io/jlomeli/the_yarn_place/index.html?_c9_id=livepreview1&_c9_host=https://ide.c9.io" class="btn btn-info btn-sm" role="button">View</a></p>
+  				      </div>
+  				    </div>
+  					</div><!--Thumbnail 3 ends -->
+  				</div> <!-- Thumbnails End here -->
+  			</div>
+      </div>
+    </div>
 
-</body>
+  <!--Contact section begins-->
+    <div class="container-fluid" id="contact">
+      <!-- <div class="container"> -->
+        <div class="row">
+          <div class="col-sm-12 contact-text">
+            <h1>Contact Me!</h1>
+            <p>If you have any questions please feel free to contact me.</p>
+          </div>
+        </div>
+        <div class="row"><!-- begining of row for footer + contact -->
+          <div class="col-sm-6">
+            <!--Contact form begins-->
+              <form action="" id="contact-form">
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" class="form-control text" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                 <label for="email">Email</label>
+                  <input type="text" class="form-control text" id="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                  <label for="subject">Subject</label>
+                  <input type="text" class="form-control text" id="subject" placeholder="Your subject">
+                </div>
+                <label for="message">Message</label>
+                <textarea class="form-control text" rows="3" placeholder="How can I help?" required>
+                </textarea>
+                <label>
+                  <input type="checkbox" value="">
+                    I'm not a robot
+                </label>
+              </form>
+            </div>
+          <!--contact form ends-->
+          <div class="col-sm-6 contact-text">
+            <div class="row">
+              <div class="col-sm-10 col-sm-offset-2">
+                <div class="text-center">
+                  <a href="#" target="_blank">
+                      <i class="fa fa-facebook-square fa-3x social-media"></i>
+                  </a>
+                   <a href="#" target="_blank">
+                    <i class="fa fa-instagram fa-3x social-media" ></i>
+                  </a>
+                  <a href="#" target="_blank">
+                    <i class="fa fa-pinterest fa-3x social-media"></i>
+                  </a>
+                </div>
+                <div>
+                  <address class="text-center">
+                    1256 W Road <br>
+                    Fresno Ca, 93710 <br>
+                  </address>
+                </div>
+              </div>
+            </div>
+          </div> <!--contact text ends -->
+        </div><!-- end of row for footer + contact -->
+      <!-- </div> -->
+    </div>
+  <!--Contact section end-->
+
+  <!-- javascript	 -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  </body>
 </html>
